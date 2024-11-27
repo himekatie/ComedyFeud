@@ -35,6 +35,7 @@
     .board{
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         .multi-border {
             position: relative;
