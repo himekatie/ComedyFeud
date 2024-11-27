@@ -2,31 +2,43 @@ import React, { useState } from 'react';
 import './QuizComponent.css';
 
 const QuizComponent = () => {
+
   // Questions array
   const questions = [
     "What is the capital of France?",
     "What is 2 + 2?",
-    "Who wrote 'To Kill a Mockingbird'?"
+    "Who wrote 'To Kill a Mockingbird'?",
   ];
 
   const answers = [
-    ["1", "2","a"],
-    ["3", "4","b"],
-    ["5", "6","c"],
+    ["Paris", "London", "Berlin", "Rome", "Madrid", "Lisbon"],
+    ["1", "2", "3", "4", "5", "6"],
+    ["Harper Lee", "Mark Twain", "J.K. Rowling", "Shakespeare", "Charles Dickens", "Hemingway"],
   ];
 
   // State to track the current question index
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState(0);
+  const [flipped, setFlipped] = useState(Array(6).fill(false)); // Array to track flipped state of each card
 
   
+  const handleFlip = (index) => {
+    const newFlipped = [...flipped];
+    newFlipped[index] = !newFlipped[index];
+    setFlipped(newFlipped);
+  };
 
   // Handler to go to the next question
   const nextQuestion = () => {
     setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length);
     setCurrentAnswerIndex((prevIndex) => (prevIndex + 1) % answers.length);
+    setFlipped(Array(6).fill(0)); 
 
   };
+
+
+
+  
 
   return (
     <div className="quiz">
@@ -47,15 +59,26 @@ const QuizComponent = () => {
       </div>
 
       <div className="board">
-        <div className="multi-border">
+        <div className="multi-border">  
 
           <div className="container">
-            <div className="box">1</div>
-            <div className="box">5</div>
-            <div className="box">2</div>
-            <div className="box">6</div>
-            <div className="box">3</div>
-            <div className="box">4</div>
+            {answers[currentQuestionIndex].map((answer, index) => (
+
+              <div key={index} className={`card ${flipped[index] ? "flipped" : ""}`} onClick={() => handleFlip(index)}>
+
+              {/* <div className="card-inner"> */}
+                <div className="card-front">{index + 1}</div>
+                <div className="card-back">{answer}</div>
+              {/* </div> */}
+          </div>
+        ))}
+            
+            {/* <div className="card">1</div>
+            <div className="card">5</div>
+            <div className="card">2</div>
+            <div className="card">6</div>
+            <div className="card">3</div>
+            <div className="card">4</div> */}
           </div>
 
             {/* <div className="ans">
