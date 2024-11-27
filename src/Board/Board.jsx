@@ -8,7 +8,10 @@ const Board = () => {
             <div className='oval'></div>
             <div className='rectangle-left'></div>
             <div className='rectangle-right'></div>
-            <QuizComponent/>
+            <div className="question">
+              <QuizComponent/>
+
+            </div>
         </div>
 
     )
