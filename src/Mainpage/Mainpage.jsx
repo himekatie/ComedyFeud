@@ -20,8 +20,6 @@ function Mainpage(){
         // Could put form here once code is finished
         <div className="mainpage">
           <Board/>
-            
-
         </div>
     
             
