@@ -12,6 +12,8 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        z-index: 1;
+        margin-top: 10px;
         
 
         .round{
@@ -24,10 +26,11 @@
 
         .score{
             background-color: blue;
-            height: 100px;
-            width: 200px;
+            height: 80px;
+            width: 180px;
             border-style: solid;
             border: 10px solid brown;
+            margin-bottom: 15px;
             /* padding: 10px; */
         }
     }
@@ -36,13 +39,41 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        .multi-border {
+      
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 10px; /* Space between the boxes */
+            padding: 15px;
+            width: 700px; /* Adjust the width to fit your needs */
+            background-color: brown;
             position: relative;
-            border: 15px solid blue;
-            padding: 10px;
           }
           
+          /* Box style with borders */
+          .box {
+            background-color: #00aaff; /* Light blue background */
+            /* background: rgba(255, 0, 0, .3); */
+            background: linear-gradient(rgb(0, 170, 255), rgb(0, 68, 102));
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px; /* Adjust the height */
+            border: 3px solid white; /* Border color */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 6px 6px rgba(0, 0, 0, 3);
+            text-align: center;
+        }
+
+        .multi-border {
+            position: absolute;
+            border: 12px solid #ffffcc;
+            /* padding: 10px; */
+          }
+/*           
           .multi-border::before,
           .multi-border::after {
             content: '';
@@ -54,13 +85,15 @@
             border: 15px solid red;
             z-index: -1;
           }
-          
+           */
           .multi-border::after {
-            top: -20px;
-            left: -20px;
-            right: -20px;
-            bottom: -20px;
-            border: 15px solid green;
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            right: -12px;
+            bottom: -12px;
+            border: 5px solid #331a00 ;
           }
           
     
@@ -79,29 +112,6 @@
 
     }
 
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 10px; /* Space between the boxes */
-        padding: 20px;
-        width: 800px; /* Adjust the width to fit your needs */
-      }
-      
-      /* Box style with borders */
-      .box {
-        background-color: #00aaff; /* Light blue background */
-        color: white;
-        font-size: 24px;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 60px; /* Adjust the height */
-        border: 3px solid white; /* Border color */
-        border-radius: 8px; /* Rounded corners */
-        box-shadow: 0 0 8px 4px rgba(0, 0, 255, 0.5); /* Blue glowing shadow */
-        text-align: center;
-      }
 
     
 
