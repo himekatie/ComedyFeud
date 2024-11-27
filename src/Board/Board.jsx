@@ -8,7 +8,7 @@ const Board = () => {
             <div className='oval'></div>
             <div className='rectangle-left'></div>
             <div className='rectangle-right'></div>
-            {/* <QuizComponent/> */}
+            <QuizComponent/>
         </div>
 
     )
