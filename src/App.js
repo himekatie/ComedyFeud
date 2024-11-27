@@ -7,8 +7,8 @@ import Board from './Board/Board';
 function App() {
   return (
     <div className="App">
-      <QuizComponent/>
-      {/* <Mainpage/> */}
+      {/* <QuizComponent/> */}
+      <Mainpage/>
 
       
     </div>
