@@ -7,13 +7,13 @@
 }
 
 .oval{
-    width: 56.25rem; /* Width of the oval */
-    height: 44.75rem; /* Height of the oval */
+    width: 900px; /* Width of the oval */
+    height: 660px; /* Height of the oval */
     border-radius: 50%; /* Makes it oval-shaped */
     position: absolute; /* Positioning the oval absolutely inside the Board */
     top: 50%; /* Center it vertically */
     left: 50%; /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Adjust to perfectly center the oval */
+    transform: translate(-50%, -45%); /* Adjust to perfectly center the oval */
     border: 10px solid gold;
     background:radial-gradient(circle, white  10%, transparent 40%),black;
     background-size: 17px 17px;
@@ -23,9 +23,10 @@
     width: 140px; /* Width of the rectangle */
     height: 150px; /* Height of the rectangle */
     position: absolute; /* Position it relative to the board */
+    border-radius: 10px;
     top: 50%; /* Vertically center it with the oval */
-    left: calc(50% - 587px); /* Position to the left of the oval */
-    transform: translateY(-50%); /* Adjust to perfectly center vertically */
+    left: calc(50% - 585px); /* Position to the left of the oval */
+    transform: translateY(-37%); /* Adjust to perfectly center vertically */
     border-left: 10px solid gold;
     border-top: 10px solid gold;
     border-bottom: 10px solid gold;
@@ -38,9 +39,10 @@
     width: 140px; /* Width of the rectangle */
     height: 150px; /* Height of the rectangle */
     position: absolute; /* Position it relative to the board */
+    border-radius: 10px;
     top: 50%; /* Vertically center it with the oval */
-    left: calc(50% + 438px); /* Position to the right of the oval */
-    transform: translateY(-50%); /* Adjust to perfectly center vertically */
+    left: calc(50% + 437px); /* Position to the right of the oval */
+    transform: translateY(-37%); /* Adjust to perfectly center vertically */
     border-right: 10px solid gold;
     border-top: 10px solid gold;
     border-bottom: 10px solid gold;
