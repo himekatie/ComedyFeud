@@ -31,8 +31,11 @@ const QuizComponent = () => {
   return (
     <div className="quiz">
       <div className="header">
-        <div className="round">
-          Round: {currentQuestionIndex+1}
+        <div className="round" onClick={nextQuestion}>
+          Round {currentQuestionIndex+1}:
+          <div className="que">
+          {questions[currentQuestionIndex]}
+          </div>
         </div>
 
         <div className="score">

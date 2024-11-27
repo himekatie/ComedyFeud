@@ -13,15 +13,19 @@
         align-items: center;
         gap: 10px;
         z-index: 1;
-        margin-top: 10px;
+        margin-top: -10px;
         
 
         .round{
-            background-color: bisque;
+            background-color: #00004d;
+            color: rgb(255, 255, 255);
             font-size: 35px;
             font-weight: 650;
             margin: 0px;
             padding: 0px;
+            border: 8px solid #000080;
+            border-radius: 5px;
+            padding: 10px;
         }
 
         .score{
@@ -29,7 +33,7 @@
             height: 80px;
             width: 180px;
             border-style: solid;
-            border: 10px solid brown;
+            border: 10px solid #663300;
             margin-bottom: 15px;
             /* padding: 10px; */
         }
@@ -46,20 +50,20 @@
             gap: 10px; /* Space between the boxes */
             padding: 15px;
             width: 700px; /* Adjust the width to fit your needs */
-            background-color: brown;
+            background-color: #663300;
             position: relative;
           }
           
           /* Box style with borders */
           .box {
-            background-color: #00aaff; /* Light blue background */
+            /* background-color: #00aaff; Light blue background */
             /* background: rgba(255, 0, 0, .3); */
-            background: linear-gradient(rgb(0, 170, 255), rgb(0, 68, 102));
+            background: linear-gradient(rgb(0, 170, 255), rgb(0, 51, 77));
             color: white;
             font-size: 24px;
             font-weight: bold;
             display: flex;
-            justify-cnpontent: center;
+            justify-content: center;
             align-items: center;
             height: 60px; /* Adjust the height */
             border: 3px solid white; /* Border color */
