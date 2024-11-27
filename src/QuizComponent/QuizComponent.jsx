@@ -44,11 +44,31 @@ const QuizComponent = () => {
       </div>
 
       <div className="board">
-      <button onClick={nextQuestion}>Next Question</button>
+        <div className="multi-border">
 
-        
+          <div className="container">
+            <div className="box">1</div>
+            <div className="box">5</div>
+            <div className="box">2</div>
+            <div className="box">6</div>
+            <div className="box">3</div>
+            <div className="box">4</div>
+          </div>
+
+            {/* <div className="ans">
+
+            </div> */}
+
+        </div>
+          
+          {/* <button onClick={nextQuestion}>Next Question</button> */}
+
+          
 
       </div>
+
+   
+
 
       {/* <h1>Quiz Game</h1>
       <p>{questions[currentQuestionIndex]}</p>

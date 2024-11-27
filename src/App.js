@@ -7,7 +7,9 @@ import Board from './Board/Board';
 function App() {
   return (
     <div className="App">
-      <Mainpage/>
+      <QuizComponent/>
+      {/* <Mainpage/> */}
+
       
     </div>
   );
