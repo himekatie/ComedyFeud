@@ -7,8 +7,8 @@
 }
 
 .oval{
-    width: 900px; /* Width of the oval */
-    height: 715px; /* Height of the oval */
+    width: 56.25rem; /* Width of the oval */
+    height: 44.75rem; /* Height of the oval */
     border-radius: 50%; /* Makes it oval-shaped */
     position: absolute; /* Positioning the oval absolutely inside the Board */
     top: 50%; /* Center it vertically */
