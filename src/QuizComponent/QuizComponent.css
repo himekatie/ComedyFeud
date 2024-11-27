@@ -86,6 +86,7 @@
             height: 60px; */
             /* position: relative; */
             cursor: pointer;
+            pointer-events: auto;
             transform-style: preserve-3d;
             transition: transform 0.6s; 
 
@@ -121,7 +122,7 @@
         }
 
         .card-front {
-            position: absolute;
+            /* position: absolute; */
             background: linear-gradient(to bottom, #0072ff, #00c6ff); /* Blue gradient */
         }
           
