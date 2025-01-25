@@ -42,12 +42,6 @@ const QuizComponent = () => {
     return flipped[index] ? answer : index + 1;
   };
 
-
-
-
-
-  
-
   return (
     <div className="quiz">
       <div className="header">
@@ -62,8 +56,7 @@ const QuizComponent = () => {
 
         </div>
 
-        
-
+      
       </div>
 
       <div className="board">
