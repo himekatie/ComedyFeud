@@ -19,3 +19,18 @@
     
 }
 
+.rectangle-left .score,
+.rectangle-right .score {
+    /* font-size: 2rem;  */
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Set text color */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Flex container for centering */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    width: 100%; /* Make sure Score spans the full container */
+    height: 100%; /* Make sure Score spans the full container */ /* Keep the background transparent */
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Remove shadows if present */
+}
+
