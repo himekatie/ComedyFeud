@@ -1,5 +1,8 @@
 .score{
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80px;
     width: 180px;
     border-style: solid;
@@ -15,6 +18,7 @@
     background-image: radial-gradient(rgba(255, 255, 255, 0.163) 60%, transparent 10%);
     background-size: 20px 20px; 
     /* padding-top: 10px; */
+    cursor: pointer;
   
     
 }
@@ -32,5 +36,7 @@
     height: 100%; /* Make sure Score spans the full container */ /* Keep the background transparent */
     border: none; /* Remove any borders */
     box-shadow: none; /* Remove shadows if present */
+    cursor: pointer;
 }
+
 

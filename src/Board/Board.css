@@ -78,3 +78,72 @@
 
 
 }
+
+.bottom-left, .bottom-right {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.bottom-left {
+    bottom: 30px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 30px;
+    right: 20px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+/* Styling for Strike & Steal Buttons */
+.strike-btn, .steal-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.strike-btn:hover, .steal-btn:hover {
+    background-color: darkred;
+}
+
+/* Container for Strike Images Below Button */
+.strike-images, .steal-images {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+
+img {
+    margin-top: 5px;
+    width: 90px;
+    height: 90px;
+}
+

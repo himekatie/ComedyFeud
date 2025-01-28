@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './QuizNew.css';
 
 
-const QuizNew = ({ sharedData, totalScore, setTotalScore}) => {
+const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes}) => {
   const [flipped, setFlipped] = useState(Array(6).fill(false));
   const [isResetting, setIsResetting] = useState(false);
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState(0);
@@ -10,7 +10,7 @@ const QuizNew = ({ sharedData, totalScore, setTotalScore}) => {
 
 
   const answers = [
-    ["Paris", "London", "Berlin", "Madrid", "Rome", "Lisbon", "Athens", "Vienna"],
+    ["Paris", "London", "Berlin", "Madrid", "Rome", "Lisbon", "Athens"],
     ["2", "4", "6", "8", "10", "12", "14", "16"],
     ["Shakespeare", "Dickens", "Hemingway", "Austen", "Twain", "Chaucer", "Poe", "Joyce"]
   ];
@@ -22,7 +22,6 @@ const QuizNew = ({ sharedData, totalScore, setTotalScore}) => {
     "Rome": 5,
     "Lisbon": 5,
     "Athens": 5,
-    "Vienna": 20,
     "2": 60,
     "4": 5,
     "6": 5,

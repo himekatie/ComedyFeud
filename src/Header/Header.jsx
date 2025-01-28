@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Header.css';
 
 
-const Header = ({sharedData, setSharedData}) => {
+const Header = ({sharedData, setSharedData, resetStrikes}) => {
 
     const questions = [
         "What is the capital of France?",
@@ -14,6 +14,7 @@ const Header = ({sharedData, setSharedData}) => {
     const nextQuestion = () => {
         setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length);
         setSharedData((prevIndex) => (prevIndex + 1) % questions.length);
+        resetStrikes();
   };
 
   return(//return the index which will be the first number for the ansers in the 2d array
