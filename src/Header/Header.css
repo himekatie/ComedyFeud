@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 3;
+    margin-top: -10px;
+    position: absolute;
+    top: 15px;
+}
+
+.round{
+    background-color: #00004d;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 650;
+    border: 8px solid #000080;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}

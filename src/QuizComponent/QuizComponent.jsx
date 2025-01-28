@@ -23,10 +23,8 @@ const QuizComponent = () => {
 
   
   const handleFlip = (index) => {
-    console.log("Card clicked:", index);
     const newFlipped = [...flipped];
     newFlipped[index] = !newFlipped[index];
-    console.log("Updated flipped array:", newFlipped);
     setFlipped(newFlipped);
 
   };
@@ -65,7 +63,7 @@ const QuizComponent = () => {
           <div className="container">
             {answers[currentQuestionIndex].map((answer, index) => (
 
-              <div key={index} className={`card ${flipped[index] ? "flipped" : ""}`} onClick={() => console.log("hello")}>{/*handleFlip(index)*/}
+              <div key={index} className={`card ${flipped[index] ? "flipped" : ""}`} onClick={() => handleFlip(index)}>{/*handleFlip(index)*/}
               
               {/* <div className="card-inner"> */}
               <div className={`card-${!flipped[index] ? "front" : "back"} `} >{getFlippedValue(index,answer)}</div>

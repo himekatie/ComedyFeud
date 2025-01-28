@@ -1,14 +1,18 @@
 .board{
    position: relative;
+   display: flex;
    width: 100%; /* The width of the board fills the parent container */
    min-height: 100vh; /* Ensure the board takes up at least the full viewport height */
    overflow: visible;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
    min-width: 1200px;
 }
 
 .oval{
     width: 60vw;
-    height: 80vh;
+    height: 85vh;
     /* width: 56.25rem;  */
     /* height: 41.25rem;  */
     border-radius: 50%; /* Makes it oval-shaped */
@@ -30,7 +34,7 @@
     border-radius: 10px;
     top: 50%; /* Vertically center it with the oval */
     left: calc(50% - 585px); /* Position to the left of the oval */
-    transform: translateY(-37%); /* Adjust to perfectly center vertically */
+    transform: translateY(-36%); /* Adjust to perfectly center vertically */
     border-left: 10px solid gold;
     border-top: 10px solid gold;
     border-bottom: 10px solid gold;
@@ -47,8 +51,8 @@
     position: absolute; /* Position it relative to the board */
     border-radius: 10px;
     top: 50%; /* Vertically center it with the oval */
-    left: calc(50% + 437px); /* Position to the right of the oval */
-    transform: translateY(-37%); /* Adjust to perfectly center vertically */
+    left: calc(50% + 430px); /* Position to the right of the oval */
+    transform: translateY(-36%); /* Adjust to perfectly center vertically */
     border-right: 10px solid gold;
     border-top: 10px solid gold;
     border-bottom: 10px solid gold;
@@ -56,3 +60,19 @@
     background-size: 17px 17px;
 }
 
+.middle{
+    width: 50vw; /* Set the desired width */
+    height: 32vh; /* Set the desired height */
+    
+    background-color: rgb(61, 47, 2); /* Set the brown color */
+    border: 2px solid black; /* Optional: darker brown border for detail */
+
+    box-shadow: 
+    0 0 0 10px rgb(251, 232, 182), /* Second border */
+    0 0 0 15px black; /* Third border */
+
+    position: relative; /* Ensure it participates in stacking order */
+    z-index: 2;
+
+
+}
