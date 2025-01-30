@@ -1,11 +1,13 @@
-import React, {useState} from 'react';
+import React, {useState, useRef } from 'react';
+import useSound from 'use-sound';
 import './Board.css';
 import QuizComponent from '../QuizComponent/QuizComponent';
 import QuizNew from '../QuizNew/QuizNew';
 import Header from '../Header/Header';
 import Score from '../Score/Score';
 import RedX from '../Images/RedX.png';
-
+import NoSound from '../Audio/FamilyFeudBad.mp3';
+import WinSound from '../Audio/familyFeudWin.mp3';
 
 const Board = () => {
     const [sharedData, setSharedData] = useState(0);
@@ -16,25 +18,31 @@ const Board = () => {
     const [overlay, setOverlay] = useState(null); // Handle full-screen images
     const [stealVisible, setStealVisible] = useState(false); 
     const [steals, setSteals] = useState(0);
+    const [playSoundWin] = useSound(WinSound);
+    const [playSoundNo] = useSound(NoSound);
     
     
     const handleLeftClick = () => {
         setLeftScore(leftScore + totalScore); // Add middle score to left
         setTotalScore(0); // Reset middle score
+        playSoundWin();
     };
 
     const handleRightClick = () => {
         setRightScore(rightScore + totalScore); // Add middle score to right
         setTotalScore(0); // Reset middle score
+        playSoundWin();
     };
     const handleStrike = () => {
         setStrikes(prev => prev + 1); // Increment strike count
         setOverlay('strike'); // Show strike overlay
+        playSoundNo();
     };
 
     const handleSteal = () => {
         setSteals(prev => prev + 1);
         setOverlay('steal'); // Show steal overlay
+        playSoundNo();
     };
 
     const resetStrikes = () => {
@@ -43,8 +51,11 @@ const Board = () => {
         setOverlay(null); // Remove any active overlay
         setStealVisible(false); 
     };
+
     return(
         <div className='board'>
+            {/* <audio ref={Win} src="/Audio/familyFeudWin.mp3"></audio>
+            <audio ref={No} src="/Audio/FamilyFeudBad.mp3"></audio> */}
              <Header sharedData={sharedData} setSharedData={setSharedData} resetStrikes = {resetStrikes}/>
              <Score totalScore = {totalScore}/>
             <div className='oval'></div>

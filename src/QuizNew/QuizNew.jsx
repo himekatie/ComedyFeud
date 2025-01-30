@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import useSound from 'use-sound';
 import './QuizNew.css';
+import YesSound from '../Audio/familyFeudGood.mp3';
 
 
 const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes}) => {
@@ -7,6 +9,7 @@ const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes}) => {
   const [isResetting, setIsResetting] = useState(false);
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState(0);
   const [displayedData, setDisplayedData] = useState(sharedData);
+  const [playSoundYes] = useSound(YesSound);
 
 
   const answers = [
@@ -42,6 +45,7 @@ const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes}) => {
 
 
     const handleFlip = (index) => {
+        playSoundYes();
         const newFlipped = [...flipped];
         newFlipped[index] = !newFlipped[index];
         setFlipped(newFlipped);

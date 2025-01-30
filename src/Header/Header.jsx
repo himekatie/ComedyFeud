@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Header.css';
 
 
+
 const Header = ({sharedData, setSharedData, resetStrikes}) => {
 
     const questions = [
