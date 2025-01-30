@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ComedyFeud/static/css/main.01c924b8.css",
-    "main.js": "/ComedyFeud/static/js/main.923ff30c.js",
+    "main.js": "/ComedyFeud/static/js/main.2bbbf90d.js",
     "static/js/885.e5d949d2.chunk.js": "/ComedyFeud/static/js/885.e5d949d2.chunk.js",
     "static/js/453.ed3810f9.chunk.js": "/ComedyFeud/static/js/453.ed3810f9.chunk.js",
     "static/media/RedX.png": "/ComedyFeud/static/media/RedX.afacfe7395014850f7f6.png",
@@ -11,12 +11,12 @@
     "static/media/logo.svg": "/ComedyFeud/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ComedyFeud/index.html",
     "main.01c924b8.css.map": "/ComedyFeud/static/css/main.01c924b8.css.map",
-    "main.923ff30c.js.map": "/ComedyFeud/static/js/main.923ff30c.js.map",
+    "main.2bbbf90d.js.map": "/ComedyFeud/static/js/main.2bbbf90d.js.map",
     "885.e5d949d2.chunk.js.map": "/ComedyFeud/static/js/885.e5d949d2.chunk.js.map",
     "453.ed3810f9.chunk.js.map": "/ComedyFeud/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01c924b8.css",
-    "static/js/main.923ff30c.js"
+    "static/js/main.2bbbf90d.js"
   ]
 }
