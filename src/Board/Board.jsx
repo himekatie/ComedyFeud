@@ -70,7 +70,7 @@ const Board = () => {
             </div>
             {/* Strike Section */}
                 <div className="bottom-left">
-                    <button className="strike-btn" onClick={handleStrike}>Strike ({strikes})</button>
+                    <button className="strike-btn" onClick={handleStrike}>Strike </button>
                     <div className="strike-images">
                         {[...Array(strikes)].map((_, index) => (
                             <img key={index} src={RedX} alt="Strike" />
@@ -78,7 +78,7 @@ const Board = () => {
                     </div>
                 </div>
                 <div className="bottom-right">
-                    <button className="steal-btn" onClick={handleSteal}>Steal ({steals})</button>
+                    <button className="steal-btn" onClick={handleSteal}>Steal </button>
                     <div className="steal-images">
                         {[...Array(steals)].map((_, index) => (
                             <img key={index} src={RedX} alt="Steal" />
