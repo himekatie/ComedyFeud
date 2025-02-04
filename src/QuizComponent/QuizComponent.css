@@ -1,0 +1,166 @@
+.quiz{
+    height:100vh;
+    max-height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        z-index: 1;
+        margin-top: -10px;
+        
+        
+
+        .round{
+            background-color: #00004d;
+            color: rgb(255, 255, 255);
+            font-size: 35px;
+            font-weight: 650;
+            margin: 0px;
+            padding: 0px;
+            border: 8px solid #000080;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .score{
+            background-color: blue;
+            height: 80px;
+            width: 180px;
+            border-style: solid;
+            border: 10px solid #663300;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            /* padding: 10px; */
+            
+            background-image: radial-gradient(rgba(255, 255, 255, 0.163) 60%, transparent 10%);
+            background-size: 20px 20px; 
+            /* padding-top: 10px; */
+          
+            
+        }
+    }
+
+    .board{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+      
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 15px; /* Space between the boxes */
+            padding: 15px;
+            width: 700px; /* Adjust the width to fit your needs */
+            background-color: #663300;
+            /* position: relative; */
+
+            
+        }
+
+        .card {
+            /* backface-visibility: hidden;
+            background: linear-gradient(rgb(0, 170, 255), rgb(0, 51, 77));
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* height: 60px; Adjust the height
+            border: 3px solid white; Border color
+            border-radius: 8px; Rounded corners
+            box-shadow: 0 0 6px 6px rgba(0, 0, 0, 3);
+            text-align: center;
+            cursor: pointer; */
+            
+            /* width: 150px;
+            height: 60px; */
+            /* position: relative; */
+            cursor: pointer;
+            pointer-events: auto;
+            transform-style: preserve-3d;
+            transition: transform 0.6s; 
+
+            &.flipped{
+                transform: rotateY(180deg); /* Flip the card */
+            }
+
+        }
+      
+        
+        /* Box style with borders */
+        .card-front,
+        .card-back {
+            /* position: absolute; */
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: linear-gradient(rgb(0, 170, 255), rgb(0, 51, 77));
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 60px; 
+            border: 3px solid white; 
+            border-radius: 8px;
+            box-shadow: 0 0 6px 6px rgba(0, 0, 0, 3);
+            text-align: center;
+            cursor: pointer; 
+            
+          
+        }
+
+        .card-front {
+            /* position: absolute; */
+            background: linear-gradient(to bottom, #0072ff, #00c6ff); /* Blue gradient */
+        }
+          
+        .card-back {
+            
+            background: linear-gradient(to bottom, #f9a825, #ff6f00); 
+            transform: rotateY(180deg); /* Initially hidden */
+          }
+          
+    
+
+        .multi-border {
+            position: absolute;
+            border: 12px solid #ffffcc;
+            /* padding: 10px; */
+          }
+
+          .multi-border::after {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            right: -12px;
+            bottom: -12px;
+            border: 5px solid #331a00 ;
+          }
+          
+
+
+
+        
+
+    }
+
+
+    
+
+
+
+
+}
