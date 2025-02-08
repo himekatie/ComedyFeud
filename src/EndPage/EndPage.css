@@ -78,13 +78,14 @@ h1{
 
 .Textcolor{
 
-    color: rgb(64, 122, 247);
+    color: rgb(239, 255, 22);
 }
 
 .qr-code{
-    width: 200px;  
-    height: 200px; 
+    width: 230px;  
+    height: 230px; 
     display: block; 
+    transform: translatex(15%);
 
 }
 

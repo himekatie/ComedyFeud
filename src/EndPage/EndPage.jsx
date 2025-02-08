@@ -29,7 +29,7 @@ function Startpage({onSwitch}){
                 <div className="Right-Box Textcolor font-effect-3d">
                         Join Our 
                         Discord:
-                        <img src="qrcode" alt="QR Code" className="qr-code"  />
+                        <img src={qrcode} className="qr-code"  />
                 </div>
             </div>
             {/* <div className="border">
