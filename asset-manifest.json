@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/ComedyFeud/static/css/main.43529a5f.css",
-    "main.js": "/ComedyFeud/static/js/main.2bbbf90d.js",
+    "main.css": "/ComedyFeud/static/css/main.77505ec8.css",
+    "main.js": "/ComedyFeud/static/js/main.c64d767a.js",
     "static/js/885.e5d949d2.chunk.js": "/ComedyFeud/static/js/885.e5d949d2.chunk.js",
     "static/js/453.ed3810f9.chunk.js": "/ComedyFeud/static/js/453.ed3810f9.chunk.js",
+    "static/media/family-feud-introduction.wav": "/ComedyFeud/static/media/family-feud-introduction.3c0601a573c7a9a1b4f0.wav",
+    "static/media/family-feud-theme.wav": "/ComedyFeud/static/media/family-feud-theme.5260d27c0d662801a6a4.wav",
     "static/media/RedX.png": "/ComedyFeud/static/media/RedX.afacfe7395014850f7f6.png",
     "static/media/familyFeudWin.mp3": "/ComedyFeud/static/media/familyFeudWin.058762b7ba0b499f600b.mp3",
     "static/media/FamilyFeudBad.mp3": "/ComedyFeud/static/media/FamilyFeudBad.d87980fabdf914feb309.mp3",
+    "static/media/ComedyDiscord.png": "/ComedyFeud/static/media/ComedyDiscord.93a3d6f9c6a8cf2bd977.png",
     "static/media/familyFeudGood.mp3": "/ComedyFeud/static/media/familyFeudGood.e8ebd6941087c0aba4f9.mp3",
     "static/media/logo.svg": "/ComedyFeud/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ComedyFeud/index.html",
-    "main.43529a5f.css.map": "/ComedyFeud/static/css/main.43529a5f.css.map",
-    "main.2bbbf90d.js.map": "/ComedyFeud/static/js/main.2bbbf90d.js.map",
+    "main.77505ec8.css.map": "/ComedyFeud/static/css/main.77505ec8.css.map",
+    "main.c64d767a.js.map": "/ComedyFeud/static/js/main.c64d767a.js.map",
     "885.e5d949d2.chunk.js.map": "/ComedyFeud/static/js/885.e5d949d2.chunk.js.map",
     "453.ed3810f9.chunk.js.map": "/ComedyFeud/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43529a5f.css",
-    "static/js/main.2bbbf90d.js"
+    "static/css/main.77505ec8.css",
+    "static/js/main.c64d767a.js"
   ]
 }
