@@ -147,3 +147,43 @@ img {
     height: 90px;
 }
 
+
+.team-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;/* Matching the theme */
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    margin: 0 auto 10px auto; /* Centered and spaced above the box */
+}
+
+.team-name-left-container {
+    width: 20vw;
+    height: 15vh;
+    position: absolute; /* Position it relative to the board */
+    border-radius: 10px;
+    top: 50%; /* Vertically center it with the oval */
+    left: calc(50% - 745px); /* Position to the left of the oval */
+    transform: translateY(-150%); /* Adjust to perfectly center vertically */
+    border: 10px solid gold;
+    /* background:radial-gradient(circle, white  10%, transparent 40%),black; */
+    background-size: 17px 17px;
+}
+
+.team-name-right-container {
+    width: 20vw;
+    height: 15vh;
+    /* width: 140px; 
+    height: 150px;  */
+    position: absolute; /* Position it relative to the board */
+    border-radius: 10px;
+    top: 50%; /* Vertically center it with the oval */
+    left: calc(50% + 430px); /* Position to the right of the oval */
+    transform: translateY(-150%); /* Adjust to perfectly center vertically */
+    border: 10px solid gold;
+    /* background:radial-gradient(circle, white  10%, transparent 40%),black; */
+    background-size: 17px 17px;
+}
+

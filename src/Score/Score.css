@@ -40,3 +40,22 @@
 }
 
 
+.team-name-left-container .score,
+.team-name-right-container .score{
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Set text color */
+    text-align: center; /* Center-align the text */
+    display: flex; /* Flex container for centering */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    width: 100%; /* Make sure Score spans the full container */
+    height: 100%; /* Make sure Score spans the full container */ /* Keep the background transparent */
+    border: none; /* Remove any borders */
+    box-shadow: none; /* Remove shadows if present */
+    cursor: pointer;
+    font-size: 50px;
+}
+
+
+
+

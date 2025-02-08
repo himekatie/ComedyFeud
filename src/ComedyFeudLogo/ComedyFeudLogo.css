@@ -1,6 +1,7 @@
 .logo-container {
     display: flex;
     transform: translateY(-40px); 
+    cursor: pointer;
 
 }
   

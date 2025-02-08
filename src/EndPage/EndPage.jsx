@@ -3,7 +3,7 @@ import ComedyFeudLogo from "../ComedyFeudLogo/ComedyFeudLogo";
 import useSound from 'use-sound';
 import './EndPage.css';
 import Sound from '../Audio/family-feud-theme.wav';
-import qrcode from '../Images/rpi_upac.png';
+import qrcode from '../Images/ComedyDiscord.png';
 
 
 

@@ -66,12 +66,20 @@ const Board = ({onSwitch}) => {
              <Header sharedData={sharedData} setSharedData={setSharedData} resetStrikes = {resetStrikes}  setIsGameOver={setIsGameOver}/>
              <Score totalScore = {totalScore}/>
             <div className='oval'></div>
-            <div className='rectangle-left' onClick={handleLeftClick}>
-                <Score totalScore={leftScore}/>
+            <div className='team-name-left-container'>
+                <Score totalScore={"Team 1"}/>
+                </div>
+                <div className='rectangle-left' onClick={handleLeftClick}>
+                    <Score totalScore={leftScore}/>
+                
             </div>
-            <div className='rectangle-right' onClick={handleRightClick}>
-                <Score totalScore = {rightScore} />
-            </div>
+            <div className='team-name-right-container'>
+                <Score totalScore={"Team 2"}/>
+                </div>
+                <div className='rectangle-right' onClick={handleRightClick}>
+                    <Score totalScore = {rightScore} />
+                </div>
+            
             <div className='middle'>
                 <QuizNew sharedData={sharedData} totalScore = {totalScore} setTotalScore = {setTotalScore} />
             </div>
