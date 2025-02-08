@@ -9,7 +9,7 @@ import RedX from '../Images/RedX.png';
 import NoSound from '../Audio/FamilyFeudBad.mp3';
 import WinSound from '../Audio/familyFeudWin.mp3';
 
-const Board = () => {
+const Board = ({onSwitch}) => {
     const [sharedData, setSharedData] = useState(0);
     const [totalScore, setTotalScore] = useState(0);
     const [leftScore, setLeftScore] = useState(0);
@@ -17,6 +17,7 @@ const Board = () => {
     const [strikes, setStrikes] = useState(0); // Track number of strikes
     const [overlay, setOverlay] = useState(null); // Handle full-screen images
     const [stealVisible, setStealVisible] = useState(false); 
+    const [isGameOver, setIsGameOver] = useState(false);
     const [steals, setSteals] = useState(0);
     const [playSoundWin] = useSound(WinSound);
     const [playSoundNo] = useSound(NoSound);
@@ -52,11 +53,17 @@ const Board = () => {
         setStealVisible(false); 
     };
 
+    if (isGameOver) {
+        onSwitch(); // Switch to GameOver screen in Mainpage
+        return null; // Prevents rendering Board UI after switching
+    }
+
+
     return(
         <div className='board'>
             {/* <audio ref={Win} src="/Audio/familyFeudWin.mp3"></audio>
             <audio ref={No} src="/Audio/FamilyFeudBad.mp3"></audio> */}
-             <Header sharedData={sharedData} setSharedData={setSharedData} resetStrikes = {resetStrikes}/>
+             <Header sharedData={sharedData} setSharedData={setSharedData} resetStrikes = {resetStrikes}  setIsGameOver={setIsGameOver}/>
              <Score totalScore = {totalScore}/>
             <div className='oval'></div>
             <div className='rectangle-left' onClick={handleLeftClick}>

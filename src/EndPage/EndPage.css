@@ -1,0 +1,90 @@
+.endpage{
+    background-image: linear-gradient( blue, rgb(90, 213, 254), blue);
+    height: 100vh; /* Full viewport height */
+    max-height: 100%;
+    width: 100vw; /* Fixed typo: Changed `wh` to `vw` */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    position: relative; /* Allows absolute positioning for the h1 */
+}
+
+h1{
+    /* text-shadow: 2px 2px white; */
+    margin: 0;
+    font-size: 75px;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+.textcolor{
+    color: rgb(0, 195, 255);
+    /* text-shadow: 3px 3px 0 rgba(0, 150, 255, 0.8), 6px 6px 0 rgba(0, 100, 255, 0.6), 9px 9px 15px rgba(0, 50, 255, 0.5); */
+}
+
+
+
+.Logo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures full width */
+    flex-grow: 1;
+}
+
+
+.Bottom-Box {
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Semi-transparent blue */
+    border-radius: 15px; /* Bronze border like the logo */
+    position: absolute;
+    bottom: 50px; /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.Left-Box{ 
+    width: 50%;
+    height: 80%;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.Right-Box {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.Textcolor{
+
+    color: rgb(64, 122, 247);
+}
+
+.qr-code{
+    width: 200px;  
+    height: 200px; 
+    display: block; 
+
+}
+

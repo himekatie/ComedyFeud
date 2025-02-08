@@ -3,7 +3,7 @@ import './Header.css';
 
 
 
-const Header = ({sharedData, setSharedData, resetStrikes}) => {
+const Header = ({sharedData, setSharedData, resetStrikes, setIsGameOver}) => {
 
     const questions = [
         "What is the capital of France?",
@@ -13,10 +13,16 @@ const Header = ({sharedData, setSharedData, resetStrikes}) => {
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const nextQuestion = () => {
-        setCurrentQuestionIndex((prevIndex) => (prevIndex + 1) % questions.length);
-        setSharedData((prevIndex) => (prevIndex + 1) % questions.length);
-        resetStrikes();
-  };
+        if (currentQuestionIndex + 1 ===3) {
+            setIsGameOver(true); 
+          } else {
+            setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
+            setSharedData((prevIndex) => prevIndex + 1);
+            resetStrikes();
+            // Switch to game over state
+          }
+        };
+
 
   return(//return the index which will be the first number for the ansers in the 2d array
         <div className="header">
@@ -28,10 +34,11 @@ const Header = ({sharedData, setSharedData, resetStrikes}) => {
             </div>
         </div>
 
-  );
-
-
+    );
 };
+
+
+
 
 
 export default Header;

@@ -1,0 +1,54 @@
+.startpage{
+    background-image: linear-gradient( blue, rgb(90, 213, 254), blue);
+    height: 100vh; /* Full viewport height */
+    max-height: 100%;
+    width: 100vw; /* Fixed typo: Changed `wh` to `vw` */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    position: relative; /* Allows absolute positioning for the h1 */
+}
+
+h1{
+    /* text-shadow: 2px 2px white; */
+    margin: 0;
+    font-size: 75px;
+    font-weight: bold;
+    white-space: nowrap;
+
+}
+
+.textcolor{
+    color: rgb(0, 195, 255);
+    /* text-shadow: 3px 3px 0 rgba(0, 150, 255, 0.8), 6px 6px 0 rgba(0, 100, 255, 0.6), 9px 9px 15px rgba(0, 50, 255, 0.5); */
+}
+
+
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures full width */
+    flex-grow: 1;
+}
+
+.Button{
+    font-size: 50px;
+    transform: translateY(-40px); 
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to bottom, #4A7DFF, #1E3AFF); /* Gradient matching background */
+    border: 2px solid #1E3AFF;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.Button:hover {
+    background: linear-gradient(to bottom, #6A94FF, #283DFF);
+}
