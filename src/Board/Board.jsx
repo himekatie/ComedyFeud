@@ -9,14 +9,14 @@ import RedX from '../Images/RedX.png';
 import NoSound from '../Audio/FamilyFeudBad.mp3';
 import WinSound from '../Audio/familyFeudWin.mp3';
 
-const Board = ({onSwitch}) => {
+const Board = ({onSwitch, questions, answers, scores}) => {
     const [sharedData, setSharedData] = useState(0);
     const [totalScore, setTotalScore] = useState(0);
     const [leftScore, setLeftScore] = useState(0);
     const [rightScore, setRightScore] = useState(0);
     const [strikes, setStrikes] = useState(0); // Track number of strikes
     const [overlay, setOverlay] = useState(null); // Handle full-screen images
-    const [stealVisible, setStealVisible] = useState(false); 
+    const [stealVisible, setStealVisible] = useState(false);
     const [isGameOver, setIsGameOver] = useState(false);
     const [steals, setSteals] = useState(0);
     const [playSoundWin] = useSound(WinSound);
@@ -63,7 +63,10 @@ const Board = ({onSwitch}) => {
         <div className='board'>
             {/* <audio ref={Win} src="/Audio/familyFeudWin.mp3"></audio>
             <audio ref={No} src="/Audio/FamilyFeudBad.mp3"></audio> */}
-             <Header sharedData={sharedData} setSharedData={setSharedData} resetStrikes = {resetStrikes}  setIsGameOver={setIsGameOver}/>
+             <Header sharedData={sharedData} setSharedData={setSharedData}
+              resetStrikes = {resetStrikes} 
+               setIsGameOver={setIsGameOver}
+                questions = {questions}/>
              <Score totalScore = {totalScore}/>
             <div className='oval'></div>
             <div className='team-name-left-container'>
@@ -81,7 +84,9 @@ const Board = ({onSwitch}) => {
                 </div>
             
             <div className='middle'>
-                <QuizNew sharedData={sharedData} totalScore = {totalScore} setTotalScore = {setTotalScore} />
+                <QuizNew sharedData={sharedData}
+                 totalScore = {totalScore} setTotalScore = {setTotalScore}
+                 answers = {answers} scores = {scores} />
             </div>
             {/* Strike Section */}
                 <div className="bottom-left">

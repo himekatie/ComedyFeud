@@ -3,13 +3,13 @@ import './Header.css';
 
 
 
-const Header = ({sharedData, setSharedData, resetStrikes, setIsGameOver}) => {
+const Header = ({sharedData, setSharedData, resetStrikes, setIsGameOver, questions}) => {
 
-    const questions = [
-        "What is the capital of France?",
-        "Which of the following is a prime number?",
-        "Who wrote 'Romeo and Juliet'?"
-      ];
+    // const questions = [
+    //     "What is the capital of France?",
+    //     "Which of the following is a prime number?",
+    //     "Who wrote 'Romeo and Juliet'?"
+    //   ];
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const nextQuestion = () => {

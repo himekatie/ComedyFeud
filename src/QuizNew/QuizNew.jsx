@@ -4,7 +4,7 @@ import './QuizNew.css';
 import YesSound from '../Audio/familyFeudGood.mp3';
 
 
-const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes}) => {
+const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes, answers, scores}) => {
   const [flipped, setFlipped] = useState(Array(6).fill(false));
   const [isResetting, setIsResetting] = useState(false);
   const [currentAnswerIndex, setCurrentAnswerIndex] = useState(0);
@@ -12,36 +12,36 @@ const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes}) => {
   const [playSoundYes] = useSound(YesSound);
 
 
-  const answers = [
-    ["Paris", "London", "Berlin", "Madrid", "Rome", "Lisbon", "Athens"],
-    ["2", "4", "6", "8", "10", "12", "14", "16"],
-    ["Shakespeare", "Dickens", "Hemingway", "Austen", "Twain", "Chaucer", "Poe", "Joyce"]
-  ];
-  const scores = {
-    "Paris": 40,
-    "London": 10,
-    "Berlin": 10,
-    "Madrid": 5,
-    "Rome": 5,
-    "Lisbon": 5,
-    "Athens": 5,
-    "2": 60,
-    "4": 5,
-    "6": 5,
-    "8": 5,
-    "10": 5,
-    "12": 5,
-    "14": 5,
-    "16": 10,
-    "Shakespeare": 80,
-    "Dickens": 5,
-    "Hemingway": 5,
-    "Austen": 5,
-    "Twain": 5,
-    "Chaucer": 5,
-    "Poe": 5,
-    "Joyce": 5
-  };
+  // const answers = [
+  //   ["Paris", "London", "Berlin", "Madrid", "Rome", "Lisbon", "Athens"],
+  //   ["2", "4", "6", "8", "10", "12", "14", "16"],
+  //   ["Shakespeare", "Dickens", "Hemingway", "Austen", "Twain", "Chaucer", "Poe", "Joyce"]
+  // ];
+  // const scores = {
+  //   "Paris": 40,
+  //   "London": 10,
+  //   "Berlin": 10,
+  //   "Madrid": 5,
+  //   "Rome": 5,
+  //   "Lisbon": 5,
+  //   "Athens": 5,
+  //   "2": 60,
+  //   "4": 5,
+  //   "6": 5,
+  //   "8": 5,
+  //   "10": 5,
+  //   "12": 5,
+  //   "14": 5,
+  //   "16": 10,
+  //   "Shakespeare": 80,
+  //   "Dickens": 5,
+  //   "Hemingway": 5,
+  //   "Austen": 5,
+  //   "Twain": 5,
+  //   "Chaucer": 5,
+  //   "Poe": 5,
+  //   "Joyce": 5
+  // };
 
 
     const handleFlip = (index) => {
@@ -85,6 +85,9 @@ const QuizNew = ({ sharedData, totalScore, setTotalScore, resetStrikes}) => {
         return flipped[index] ? answer : index + 1;
     };
 
+  if (!answers[displayedData]) {
+    return <div>Loading...</div>; // Prevents app crash
+  }
   return(
         <div className="quiz">
 
