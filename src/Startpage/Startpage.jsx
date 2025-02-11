@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import './Startpage.css';
 import Board from "../Board/Board";
 import ComedyFeudLogo from "../ComedyFeudLogo/ComedyFeudLogo";
@@ -7,8 +7,14 @@ import Sound from '../Audio/family-feud-introduction.wav';
 // class = "font-effect-fire"
 
 
-function Startpage({onSwitch, selectedGame, setSelectedGame}){
+function Startpage({onSwitch, selectedGame, setSelectedGame, Team1, Team2, setTeam1, setTeam2}){
     const [playSound] = useSound(Sound);
+    const handleChange1 = (event) => {
+        setTeam1(event.target.value);
+      };
+    const handleChange2 = (event) => {
+        setTeam2(event.target.value);
+      };
     return(
         <div className="startpage">
             <div className="Buttons">
@@ -18,7 +24,11 @@ function Startpage({onSwitch, selectedGame, setSelectedGame}){
                 <button onClick={() => setSelectedGame("game3")}>3</button>
                 <button onClick={() => setSelectedGame("game4")}>4</button>
             </div>
-            <h1 className ="textcolor font-effect-3d">
+            <div className="TEXT">
+                <input type = "text" value = {Team1} onChange = {handleChange1}/>
+                <input type = "text" value = {Team2} onChange = {handleChange2}/>
+            </div>
+            <h1 className ="textcolorstart font-effect-3d">
                 UPAC Comedy Presents
             </h1>
             <div className="Logo" onClick= {onSwitch}>

@@ -7,11 +7,11 @@ import qrcode from '../Images/ComedyDiscord.png';
 
 
 
-function Startpage({onSwitch}){
+function EndPage({onSwitch}){
     const [playSound] = useSound(Sound);
     return(
         <div className="endpage">
-            <h1 className ="textcolor font-effect-3d">
+            <h1 className ="textcolor font-effect-3d"  onClick={onSwitch}>
                 Thanks For Playing
             </h1>
             <div className="Logo1" onClick= {playSound}>
@@ -39,4 +39,4 @@ function Startpage({onSwitch}){
     )
 }
 
-export default Startpage;
+export default EndPage;

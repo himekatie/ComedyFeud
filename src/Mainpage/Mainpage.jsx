@@ -96,6 +96,8 @@ function Mainpage(){
   const [currentComponent, setCurrentComponent] = useState("first");
   const [selectedGame, setSelectedGame] = useState("game0"); 
   const gameData = games[selectedGame] || games["game0"];
+  const [Team1, setTeam1] = useState('');
+  const [Team2, setTeam2] = useState('');
       return(
 
         // Could put form here once code is finished
@@ -105,13 +107,15 @@ function Mainpage(){
       
         <div>
       {currentComponent === "first" ? (
-        <Startpage onSwitch={() => setCurrentComponent("second")} selectedGame = {selectedGame} setSelectedGame = {setSelectedGame} />
+        <Startpage onSwitch={() => setCurrentComponent("second")} selectedGame = {selectedGame} setSelectedGame = {setSelectedGame} Team1 = {Team1} setTeam1 = {setTeam1} Team2 = {Team2} setTeam2={setTeam2}/>
       ) : currentComponent === "second" ? (
         <div className="mainpage">
-          <Board onSwitch={() => setCurrentComponent("third")} questions={gameData.questions} answers={gameData.answers} scores={gameData.scores} />
+          <Board onSwitch={() => setCurrentComponent("third")} questions={gameData.questions} answers={gameData.answers} scores={gameData.scores} Team2 = {Team2} Team1 = {Team1}  />
         </div>
       ) : (
-         <EndPage/> // Show Game Over screen
+         <EndPage onSwitch={() => {setCurrentComponent("first");
+            setTimeout(() => setCurrentComponent("first"), 0); 
+         }}/> // Show Game Over screen
       )}
 
         

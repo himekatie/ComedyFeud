@@ -9,7 +9,7 @@ import RedX from '../Images/RedX.png';
 import NoSound from '../Audio/FamilyFeudBad.mp3';
 import WinSound from '../Audio/familyFeudWin.mp3';
 
-const Board = ({onSwitch, questions, answers, scores}) => {
+const Board = ({onSwitch, questions, answers, scores, Team1, Team2}) => {
     const [sharedData, setSharedData] = useState(0);
     const [totalScore, setTotalScore] = useState(0);
     const [leftScore, setLeftScore] = useState(0);
@@ -70,14 +70,14 @@ const Board = ({onSwitch, questions, answers, scores}) => {
              <Score totalScore = {totalScore}/>
             <div className='oval'></div>
             <div className='team-name-left-container'>
-                <Score totalScore={"Team 1"}/>
+                <Score totalScore={Team1}/>
                 </div>
                 <div className='rectangle-left' onClick={handleLeftClick}>
                     <Score totalScore={leftScore}/>
                 
             </div>
             <div className='team-name-right-container'>
-                <Score totalScore={"Team 2"}/>
+                <Score totalScore={Team2}/>
                 </div>
                 <div className='rectangle-right' onClick={handleRightClick}>
                     <Score totalScore = {rightScore} />
@@ -86,7 +86,8 @@ const Board = ({onSwitch, questions, answers, scores}) => {
             <div className='middle'>
                 <QuizNew sharedData={sharedData}
                  totalScore = {totalScore} setTotalScore = {setTotalScore}
-                 answers = {answers} scores = {scores} />
+                 answers = {answers} scores = {scores}
+                  />
             </div>
             {/* Strike Section */}
                 <div className="bottom-left">

@@ -21,23 +21,7 @@ h1{
 
 }
 
-.Buttons{
-    display: flex;
-    transform: translateX(-700%);
-}
 
-button {
-    background-color: transparent;
-    /* color: transparent;  */
-    border: none;
-    cursor: pointer; /* Keeps it clickable */
-    /* width: 40px; 
-    height: 40px;*/
-} 
-
-button:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slight visibility on hover */
-}
 .textcolor{
     color: rgb(0, 195, 255);
     /* text-shadow: 3px 3px 0 rgba(0, 150, 255, 0.8), 6px 6px 0 rgba(0, 100, 255, 0.6), 9px 9px 15px rgba(0, 50, 255, 0.5); */

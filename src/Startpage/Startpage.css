@@ -20,12 +20,11 @@ h1{
 
 }
 
-.textcolor{
+.textcolorstart{
     color: rgb(0, 195, 255);
+    transform: translateY(-50%);
     /* text-shadow: 3px 3px 0 rgba(0, 150, 255, 0.8), 6px 6px 0 rgba(0, 100, 255, 0.6), 9px 9px 15px rgba(0, 50, 255, 0.5); */
 }
-
-
 
 .Logo {
     display: flex;
@@ -51,4 +50,41 @@ h1{
 
 .Button:hover {
     background: linear-gradient(to bottom, #6A94FF, #283DFF);
+}
+
+.Buttons{
+    display: flex;
+    transform: translateX(-700%);
+}
+
+button {
+    background-color: transparent;
+    /* color: transparent;  */
+    border: none;
+    cursor: pointer; /* Keeps it clickable */
+    /* width: 40px; 
+    height: 40px;*/
+} 
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight visibility on hover */
+}
+
+.TEXT{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-380%);
+    row-gap: 10px;
+    margin-top: 10px;
+}
+
+input{
+    background-color: transparent;
+    cursor: pointer;
+    /* border: 5px;
+    border-color: black; */
+}
+
+input:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }
