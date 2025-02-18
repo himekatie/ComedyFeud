@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ComedyFeud/static/css/main.b3cbb95d.css",
-    "main.js": "/ComedyFeud/static/js/main.f2f8f36f.js",
+    "main.css": "/ComedyFeud/static/css/main.155ea027.css",
+    "main.js": "/ComedyFeud/static/js/main.8be8c403.js",
     "static/js/885.e5d949d2.chunk.js": "/ComedyFeud/static/js/885.e5d949d2.chunk.js",
     "static/js/453.ed3810f9.chunk.js": "/ComedyFeud/static/js/453.ed3810f9.chunk.js",
     "static/media/family-feud-introduction.wav": "/ComedyFeud/static/media/family-feud-introduction.3c0601a573c7a9a1b4f0.wav",
@@ -13,13 +13,13 @@
     "static/media/familyFeudGood.mp3": "/ComedyFeud/static/media/familyFeudGood.e8ebd6941087c0aba4f9.mp3",
     "static/media/logo.svg": "/ComedyFeud/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/ComedyFeud/index.html",
-    "main.b3cbb95d.css.map": "/ComedyFeud/static/css/main.b3cbb95d.css.map",
-    "main.f2f8f36f.js.map": "/ComedyFeud/static/js/main.f2f8f36f.js.map",
+    "main.155ea027.css.map": "/ComedyFeud/static/css/main.155ea027.css.map",
+    "main.8be8c403.js.map": "/ComedyFeud/static/js/main.8be8c403.js.map",
     "885.e5d949d2.chunk.js.map": "/ComedyFeud/static/js/885.e5d949d2.chunk.js.map",
     "453.ed3810f9.chunk.js.map": "/ComedyFeud/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3cbb95d.css",
-    "static/js/main.f2f8f36f.js"
+    "static/css/main.155ea027.css",
+    "static/js/main.8be8c403.js"
   ]
 }
