@@ -37,6 +37,7 @@
     border: none; /* Remove any borders */
     box-shadow: none; /* Remove shadows if present */
     cursor: pointer;
+
 }
 
 
@@ -49,11 +50,17 @@
     align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
     width: 100%; /* Make sure Score spans the full container */
-    height: 100%; /* Make sure Score spans the full container */ /* Keep the background transparent */
+    height: 100%; 
+    min-height: 50px; 
+    max-width: 100%;
     border: none; /* Remove any borders */
     box-shadow: none; /* Remove shadows if present */
     cursor: pointer;
-    font-size: 50px;
+    font-size: clamp(14px, 3.5vw, 40px);/* Adjust font size dynamically */
+    overflow-wrap: break-word; /* Allows text to break into multiple lines */
+    word-wrap: break-word; /* Ensures compatibility with different browsers */
+    text-align: center;
+    white-space: normal;
 }
 
 
