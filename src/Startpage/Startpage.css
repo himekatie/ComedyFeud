@@ -11,6 +11,13 @@
     position: relative; /* Allows absolute positioning for the h1 */
 }
 
+.Game{
+    transform: translate(1515%,-100%);
+    background-color: transparent;
+    border: none;
+
+}
+
 h1{
     /* text-shadow: 2px 2px white; */
     margin: 0;
@@ -54,7 +61,7 @@ h1{
 
 .Buttons{
     display: flex;
-    transform: translateX(-700%);
+    transform: translateX(-733%);
 }
 
 button {
@@ -73,7 +80,7 @@ button:hover {
 .TEXT{
     display: flex;
     flex-direction: column;
-    transform: translateX(-380%);
+    transform: translate(-390%, -50%);
     row-gap: 10px;
     margin-top: 10px;
 }

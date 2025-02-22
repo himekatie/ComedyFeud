@@ -24,58 +24,62 @@ const games = {
     },
     game1: {
         questions: [
-            "Question 1?", "Question 2?", "Question 3?"
+            "Name something you wear to keep warm in winter", "Name a sport people played as a kid", "Name something college students normally eat for breakfast"
         ],
         answers: [
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"]
+            ["Coat", "Hat", "Gloves", "Scarf", "Boots"],
+            ["Soccer", "Baseball/Softball", "Tennis", "Volleyball", "Swim", "Track & Field/XC", "Basketball"],
+            ["Eggs", "Nothing", "Cereal", "Pancakes/Waffles", "Bagels/Toast", "Yogurt"]
         ],
         scores: {
-            "Answer1": 80, "Answer2": 70, "Answer3": 60, "Answer4": 50, 
-            "Answer5": 40, "Answer6": 30, "Answer7": 20, "Answer8": 10
+            "Coat": 50, "Hat": 30, "Gloves": 10, "Scarf": 7, 
+            "Boots": 3, "Soccer": 41,"Baseball/Softball":13, "Tennis":14, "Volleyball":9, "Swim":9, "Track & Field/XC":7, "Basketball":7,
+            "Eggs":34, "Nothing":27, "Cereal":14, "Pancakes/Waffles":9, "Bagels/Toast":9, "Yogurt":7
         }
     },
     game2: {
         questions: [
-            "Question 1?", "Question 2?", "Question 3?"
+            "Name a common reason to show up late to a party.", "Name something to do in the winter.", "Name something you do to stay awake at night."
         ],
         answers: [
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"]
+            ["Traffic/Car Trouble", "Getting Ready", "Lost Track of Time", "Fashionably Late", "Bad Party"],
+            ["Sledding", "Skiing/Snowboarding", "Sleep", "Drink Hot Choco", "Snowman Army", "Snowball Fight", "Ice skate"],
+            ["Social Media", "Caffeine", "Movies/Shows", "Inner Thoughts", "Games", "Homework", "Read " ]
         ],
         scores: {
-            "Answer1": 80, "Answer2": 70, "Answer3": 60, "Answer4": 50, 
-            "Answer5": 40, "Answer6": 30, "Answer7": 20, "Answer8": 10
+            "Traffic/Car Trouble":30, "Getting Ready":27, "Lost Track of Time":22, "Fashionably Late":14, "Bad Party":7,
+            "Sledding":24, "Skiing/Snowboarding":22, "Sleep":14, "Drink Hot Choco":12, "Snowman Army":10, "Snowball Fight":10, "Ice skate":8,
+            "Social Media":20, "Caffeine":18, "Movies/Shows":17, "Inner Thoughts":16, "Games":11, "Homework":10, "Read ":8
         }
     },
     game3: {
         questions: [
-            "Question 1?", "Question 2?", "Question 3?"
+            "Name something or someone you would bring to a party.", "Name something people put on toast.", "Name somewhere you would bring your partner to a first date."
         ],
         answers: [
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"]
+            ["Food", "Drinks/Alcohol", "Friends", "Myself", "Music & Games" ],
+            ["Butter", "Jam", "Peanut butter", "Avocado", "Honey" ],
+            ["Restaurant", "Coffee Shop", "The Movies", "Park", "Arcade/Amusement Park", "Shopping", "Beach" ]
         ],
         scores: {
-            "Answer1": 80, "Answer2": 70, "Answer3": 60, "Answer4": 50, 
-            "Answer5": 40, "Answer6": 30, "Answer7": 20, "Answer8": 10
+            "Food":26, "Drinks/Alcohol":25, "Friends":21, "Myself":15, "Music & Games":13,
+            "Butter":45, "Jam":30, "Peanut butter":15, "Avocado":5, "Honey":5,
+            "Restaurant":39, "Coffee Shop":18, "The Movies":14, "Park":13, "Arcade/Amusement Park":6, "Shopping":5, "Beach":5,
         }
     },
     game4: {
         questions: [
-            "Question 1?", "Question 2?", "Question 3?"
+            "Name a classic Disney movie.", "Name a place where you might need to be very quiet.", "Name a type of weather that would cancel a flight."
         ],
         answers: [
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"],
-            ["Answer1", "Answer2", "Answer3", "Answer4", "Answer5", "Answer6", "Answer7", "Answer8"]
+            ["Cinderella", "The Lion King", "Beauty and the Beast", "Aladdin", "Snow White" ],
+            ["Library", "Church", "Hospital", "Courtroom", "Movie Theater" ],
+            ["Thunderstorm", "Snowstorm", "Fog", "Hurricane", "High Winds" ]
         ],
         scores: {
-            "Answer1": 80, "Answer2": 70, "Answer3": 60, "Answer4": 50, 
-            "Answer5": 40, "Answer6": 30, "Answer7": 20, "Answer8": 10
+           "Cinderella":40, "The Lion King":30, "Beauty and the Beast":15, "Aladdin":10, "Snow White":5, 
+           "Library":50, "Church":25, "Hospital":15, "Courtroom":5, "Movie Theater":5, 
+           "Thunderstorm":50, "Snowstorm":30, "Fog":10, "Hurricane":7, "High Winds":3 
         }
     }
 };

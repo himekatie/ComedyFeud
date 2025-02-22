@@ -24,6 +24,11 @@ function Startpage({onSwitch, selectedGame, setSelectedGame, Team1, Team2, setTe
                 <button onClick={() => setSelectedGame("game3")}>3</button>
                 <button onClick={() => setSelectedGame("game4")}>4</button>
             </div>
+            <div className="Game">
+                {
+                    selectedGame
+                }
+            </div>
             <div className="TEXT">
                 <input type = "text" value = {Team1} onChange = {handleChange1}/>
                 <input type = "text" value = {Team2} onChange = {handleChange2}/>
