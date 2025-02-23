@@ -49,7 +49,7 @@ const games = {
         scores: {
             "Traffic/Car Trouble":30, "Getting Ready":27, "Lost Track of Time":22, "Fashionably Late":14, "Bad Party":7,
             "Sledding":24, "Skiing/Snowboarding":22, "Sleep":14, "Drink Hot Choco":12, "Snowman Army":10, "Snowball Fight":10, "Ice skate":8,
-            "Social Media":20, "Caffeine":18, "Movies/Shows":17, "Inner Thoughts":16, "Games":11, "Homework":10, "Read ":8
+            "Social Media":40, "Caffeine":36, "Movies/Shows":34, "Inner Thoughts":32, "Games":22, "Homework":20, "Read ":16
         }
     },
     game3: {
